@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: my-laravel-app
+    plan: free  # Lock to the free tier
+    runtime: php
+    buildCommand: composer install --no-dev --optimize-autoloader
+    startCommand: php artisan serve --host=0.0.0.0 --port=10000
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
+      - key: APP_KEY
+        value: your-generated-app-key
+      - key: APP_URL
+        value: https://my-laravel-app.onrender.com
