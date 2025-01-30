@@ -11,6 +11,6 @@ services:
       - key: APP_DEBUG
         value: false
       - key: APP_KEY
-        value: your-generated-app-key
+        value: base64:I5vzyMM/X/WCcg3YMUABx9s3p1FMQHepuzhv/sPXoE0=
       - key: APP_URL
-        value: https://my-laravel-app.onrender.com
+        value: https://production_laravel.onrender.com
